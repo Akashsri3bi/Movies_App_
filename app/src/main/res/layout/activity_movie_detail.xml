@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#161717"
+    tools:context=".MovieDetail">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/selected_movie_image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_launcher_background"/>
+
+        <TextView
+            android:id="@+id/selected_movie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="IT"
+            android:textColor="@android:color/white"
+            android:textSize="36dp" />
+
+        <Button
+            android:id="@+id/Watch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:textColor="@android:color/white"
+            android:text="  Watch Now"
+            android:background="#1D5AA5"
+            android:gravity="center|left"
+            android:drawableLeft="@android:drawable/ic_media_play"
+            />
+
+
+        <TextView
+            android:id="@+id/selected_movie_des"
+            android:layout_margin="20dp"
+            android:text="Sample Description"
+            android:layout_width="wrap_content"
+            android:layout_gravity="start"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>
